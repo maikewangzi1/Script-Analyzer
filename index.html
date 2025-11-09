@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Script Analyzer AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<style>
+  @media print {
+    body {
+      background-color: white !important;
+      color: black !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .no-print {
+      display: none !important;
+    }
+    .printable-area {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 20px !important;
+      ring-width: 0 !important;
+      background-color: white !important;
+    }
+    /* Ensure markdown content is styled for print */
+    .printable-area .prose {
+      color: #111827 !important;
+    }
+    .printable-area .prose h1,
+    .printable-area .prose h2,
+    .printable-area .prose h3,
+    .printable-area .prose h4,
+    .printable-area .prose strong {
+      color: #000 !important;
+    }
+     .printable-area .text-sky-300,
+     .printable-area .text-sky-400,
+     .printable-area .text-sky-500 {
+      color: #000 !important;
+     }
+  }
+</style>
+</head>
+<body class="bg-slate-900 text-slate-200">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
